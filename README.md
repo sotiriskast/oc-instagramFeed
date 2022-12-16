@@ -3,7 +3,7 @@
 After install go to backend/settings and find instagram.
 Add the access token and the number of images to be display.
 
-#Composer instalation
+# Composer instalation
 `composer require ideaseven/instagram-plugin`
 
 ## Available properties:
