@@ -13,8 +13,6 @@ class CreateInstagramsTable extends Migration
     {
         Schema::create('ideaseven_instagram_instagrams', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('access_token',255)->nullable();
-            $table->string('num_images',4)->nullable();
             $table->timestamps();
         });
     }
