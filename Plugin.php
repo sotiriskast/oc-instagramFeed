@@ -19,7 +19,7 @@ class Plugin extends PluginBase
         return [
             'name' => 'instagram',
             'description' => 'No description provided yet...',
-            'author' => 'ideaseven',
+            'author' => 'Sotiris Kastanas',
             'icon' => 'icon-leaf'
         ];
     }
@@ -215,10 +215,10 @@ class Plugin extends PluginBase
                 Log::info("cURL Error #:" . $err);
                 $vars = [];
                 // send an email alert to ideaseven
-                Mail::send(['raw' => 'There was an error with the instagram access token refresh process for klambrianou, please check the error log for more details.'], $vars, function ($message) {
-                    $message->from('info@ideaseven.com', 'Ideaseven');
-                    $message->to('fedros@ideaseven.com');
-                    $message->subject('kLambrianou instagram access token has not refreshed');
+                Mail::send(['raw' => 'There was an error with the instagram access token refresh process for "Name", please check the error log for more details.'], $vars, function ($message) {
+                    $message->from('mail@example.com', 'Sotiris');
+                    $message->to('mail@example.com');
+                    $message->subject('"Name" instagram access token has not refreshed');
                 });
             }
             // run this task once a week
