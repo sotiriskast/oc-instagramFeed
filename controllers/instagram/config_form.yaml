@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Instagram
+
+# Model Form Field configuration
+form: $/ideaseven/instagram/models/instagram/fields.yaml
+
+# Model Class name
+modelClass: Ideaseven\Instagram\Models\Instagram
+
+# Default redirect location
+defaultRedirect: ideaseven/instagram/instagram
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: ideaseven/instagram/instagram/update/:id
+    redirectClose: ideaseven/instagram/instagram
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: ideaseven/instagram/instagram
+    redirectClose: ideaseven/instagram/instagram
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

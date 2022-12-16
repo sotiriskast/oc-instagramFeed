@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    access_token:
+        label: Enter your Instagram access token
+        span: left
+    num_images:
+        label: Number of images to be display
+        span: right
+        type: number
+        default: 15
+
