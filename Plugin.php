@@ -198,10 +198,7 @@ class Plugin extends PluginBase
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_SSL_VERIFYHOST => false,
                 CURLOPT_SSL_VERIFYPEER => false,
-//                CURLOPT_HTTPHEADER => array(
-//                    "x-klambrianou-host: klambrianou.com",
-//                    "x-klambrianou-key: "
-//                ),
+               CURLOPT_HTTPHEADER => array(),
             ));
             // save the responce
             $response = curl_exec($curl);
